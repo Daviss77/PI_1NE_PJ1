@@ -37,7 +37,7 @@ public static void main(String[] args) {
             int frete = soma + 20;
             String vendasString = String.valueOf(vendasProdutos);
             String freteSoma = String.valueOf(frete);
-            String resultado = String.format("A quantidade de vendas foi de %s. O preço total + frete foi de %s",vendasString , freteSoma);
+            String resultado = String.format("A quantidade de vendas foi de %s. O preço total + frete foi de %s",vendasString, freteSoma);
             System.out.println(resultado);
         }
 
