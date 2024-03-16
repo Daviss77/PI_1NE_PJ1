@@ -6,25 +6,21 @@ import java.util.Scanner;
 
 public class exer4 {
 public static void main(String[] args) {
-    Scanner vendas = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     System.out.println("Digite a quantidade de até 4 vendas:");
-    String vendasProdutos = vendas.nextLine();
+    String vendasProdutos = scanner.nextLine();
 
-    Scanner preco = new Scanner(System.in);
     System.out.println("Digite o preço da venda 1:");
-    String precoProdutos = preco.nextLine();
+    String precoProdutos = scanner.nextLine();
        
-    Scanner preco1 = new Scanner(System.in);
     System.out.println("Digite o preço da venda 2:");
-    String precoProdutos1 = preco1.nextLine();
+    String precoProdutos1 = scanner.nextLine();
 
-    Scanner preco2 = new Scanner(System.in);
     System.out.println("Digite o preço da venda 3:");
-    String precoProdutos2 = preco2.nextLine();    
+    String precoProdutos2 = scanner.nextLine();    
   
-    Scanner preco3 = new Scanner(System.in);
     System.out.println("Digite o preço da venda 4:");
-    String precoProdutos3 = preco3.nextLine();
+    String precoProdutos3 = scanner.nextLine();
     
     int p1 = Integer.parseInt(precoProdutos);
     int p2 = Integer.parseInt(precoProdutos1);
@@ -37,19 +33,14 @@ public static void main(String[] args) {
             System.out.println(resultado);
         }
         else{
-            String vendasString = String.valueOf(vendasProdutos);
             int frete = soma + 20;
             String freteSoma = String.valueOf(frete);
-            String resultado = String.format("A quantidade de vendas foi de %s. O preço total + frete foi de %s",vendasString, freteSoma);
+            String resultado = String.format("A quantidade de vendas foi de %s. O preço total + frete foi de %s",vendasProdutos, freteSoma);
             System.out.println(resultado);
         }
 
     
 
-        vendas.close();
-        preco.close();
-        preco1.close();
-        preco2.close();
-        preco3.close();
+        scanner.close();
 }
 }
