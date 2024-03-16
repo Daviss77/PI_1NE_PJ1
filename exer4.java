@@ -1,4 +1,6 @@
 //ADRIEL XAVIER PEREIRA DA SILVA
+//ARTHUR RODRIGUES PORTELA
+
 import java.util.Scanner;
 
 
