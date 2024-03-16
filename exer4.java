@@ -33,12 +33,12 @@ public static void main(String[] args) {
 
     int soma =p1 + p2 + p3 + p4;
         if (soma >= 120){
-            String resultado = String.format( "A quantidade de vendas foi de %d. O preço total de %d", vendasProdutos, soma);
+            String resultado = String.format( "A quantidade de vendas foi de %s. O preço total de %d", vendasProdutos, soma);
             System.out.println(resultado);
         }
         else{
-            int frete = soma + 20;
             String vendasString = String.valueOf(vendasProdutos);
+            int frete = soma + 20;
             String freteSoma = String.valueOf(frete);
             String resultado = String.format("A quantidade de vendas foi de %s. O preço total + frete foi de %s",vendasString, freteSoma);
             System.out.println(resultado);
